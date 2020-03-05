@@ -1,0 +1,15 @@
+server:
+  port: 8095
+spring:
+  application:
+    name: Config-Server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/kiyohl/ConfigCenter
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8081/eureka/
